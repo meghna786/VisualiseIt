@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+
+}
+
+.hero {
+    min-height: 25vh;
+    padding-top: 1em;
+    place-content: center;
+    text-align: center;
+}
+
+.heading {
+  margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+}
+
+h1 {
+    color:#ab79d6;
+    font-family: "Kanit",serif;
+    /* font-size: clamp(2rem,1rem + 5vw,4rem); */
+    font-size: 5em;
+    font-weight: 800;
+    letter-spacing: .04em;
+    line-height: 1.1;
+}
+
+.frame {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 5em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+}
+
+.card {
+  border-radius: 2em;
+  padding: 0.3em 1em;
+  /* background-color: #818181; */
+  background-color: #2C3A47;
+}
+
+.controller {
+  background: #555;
+  margin: 0 1em;
+  border: 1px solid #ab79d6;;
+  height: 3em;
+  width: 3em;
+  border-radius: 100%;
+  /* background: transparent; */
+  background: #ab79d6;;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-buttons {
+  height: 4em;
+  width: 15em;
+  /* background-color: #eee; */
+  background-color:  #ab79d600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-pannel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pannel{
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container-small{
+  padding: 1em;
+  width: 10em;
+  text-align: center;
+  border-radius: 2em;
+  color:#ab79d6;
+}
+
+.title {
+	font-family: 'mono';
+	font-size: 2.5em;
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+}
