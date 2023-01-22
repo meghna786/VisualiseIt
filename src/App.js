@@ -156,9 +156,14 @@ class App extends Component {
     this.setState({
       timeouts: timeouts,
     });
+    console.log(timeouts);
   };
 
   changeSpeed = (e) => {
+    if (this.state.currentStep !== 0) {
+      alert("Wait for the array to be sorted");
+      return;
+    }
     this.clearTimeouts();
     this.setState({
       delay: parseInt(e.target.value),
@@ -188,6 +193,10 @@ class App extends Component {
   };
 
   changeBarCount = (e) => {
+    if (this.state.currentStep !== 0) {
+      alert("Wait for the array to be sorted");
+      return;
+    }
     this.clearTimeouts();
     this.clearColorKey();
     this.setState(
@@ -199,6 +208,10 @@ class App extends Component {
   };
 
   changeAlgorithm = (e) => {
+    if (this.state.currentStep !== 0) {
+      alert("Wait for the array to be sorted");
+      return;
+    }
     this.clearTimeouts();
     this.clearColorKey();
     this.setState(
@@ -243,10 +256,9 @@ class App extends Component {
 
     return (
       <div className="app">
-
         <header className="hero">
           <div className="heading">
-          <h1 >Visualise It</h1>
+            <h1>Visualise It</h1>
           </div>
         </header>
 

@@ -69,12 +69,20 @@ function Bar({ index, length, color, changeArray }) {
   }
 
   const increment=(e)=>{
+    if(len===200){
+      alert("Range is 0-200");
+      return;
+    } 
     let l=len+1;
     setLen(l);
     changeArray(index,l);
   }
 
   const decrement=(e)=>{
+    if(len===0){
+      alert("Range is 0-200");
+      return;
+    } 
     let l=len-1;
     setLen(l);
     changeArray(index,l);
